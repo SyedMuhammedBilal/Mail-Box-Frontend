@@ -27,9 +27,13 @@ export default makeStyles({
     padding: "0px",
     gap: "4.875rem",
   },
-  Frame68: {},
+  fieldMainContainer: {
+    height: "inherit",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   SigninHeading: {
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "3.688rem",
@@ -38,10 +42,9 @@ export default makeStyles({
   },
   Frame69: {},
   Paragraph: {
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 400,
-    fontSize: "24px",
+    fontSize: "1.1vw",
     lineHeight: "29px",
     color: "#FFFFFF",
   },

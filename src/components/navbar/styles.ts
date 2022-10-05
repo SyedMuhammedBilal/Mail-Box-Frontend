@@ -19,11 +19,11 @@ export default makeStyles({
     gap: "3.804rem",
   },
   NavbarMenus: {
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: "17.6366px",
     lineHeight: "21px",
+    color: "#FFFFFF",
   },
   Child2: {
     display: "flex",
@@ -42,11 +42,11 @@ export default makeStyles({
     gap: "7px",
   },
   Heading: {
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: "17.6366px",
     lineHeight: "21px",
+    color: "#FFFFFF",
   },
   Frame64: {
     display: "flex",
@@ -58,7 +58,6 @@ export default makeStyles({
   },
   Heading2: {
     marginTop: "1rem",
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: "17.6366px",
@@ -77,7 +76,6 @@ export default makeStyles({
     padding: "10px 20px",
     background: "#000000",
     borderRadius: "35px",
-    fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 500,
     fontSize: "17.6366px",

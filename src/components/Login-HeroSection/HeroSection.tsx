@@ -12,14 +12,14 @@ const HeroSection = () => {
       <Box className={classes.Frame91}>
         <Box className={classes.Frame92}>
           <Box className={classes.Frame67}>
-            <Box className={classes.Frame68}>
+            <Box>
               <Typography className={classes.SigninHeading}>
                 Sign In to <br /> Recharge Direct
               </Typography>
             </Box>
             <Box className={classes.Frame69}>
               <Typography className={classes.Paragraph}>
-                If you don't an account <br /> you can{" "}
+                If you don't have an account <br /> you can{" "}
                 <span className={classes.span}>Register here!</span>
               </Typography>
             </Box>
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <Box className={classes.Frame53}>
           <Image src={People} />
         </Box>
-        <Box>
+        <Box className={classes.fieldMainContainer}>
           <LoginTextField />
         </Box>
       </Box>
