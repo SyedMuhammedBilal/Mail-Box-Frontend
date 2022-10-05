@@ -8,7 +8,7 @@ export default makeStyles({
     width: "auto",
     alignItems: "center",
     padding: "0px",
-    gap: "596px",
+    gap: "37.25rem",
   },
   Child1: {
     display: "flex",
@@ -16,7 +16,7 @@ export default makeStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "0px",
-    gap: "60.87px",
+    gap: "3.804rem",
   },
   NavbarMenus: {
     fontFamily: "'Inter'",
@@ -57,6 +57,7 @@ export default makeStyles({
     // gap: "7px",
   },
   Heading2: {
+    marginTop: "1rem",
     fontFamily: "'Inter'",
     fontStyle: "normal",
     fontWeight: 500,
