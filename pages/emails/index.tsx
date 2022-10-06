@@ -1,5 +1,10 @@
 import React from "react";
+import EmailInbox from "@/components/EmailInbox/EmailInbox";
 
 export default function index() {
-  return <div style={{ color: "white" }}>index</div>;
+  return (
+    <div style={{ color: "white" }}>
+      <EmailInbox />
+    </div>
+  );
 }
