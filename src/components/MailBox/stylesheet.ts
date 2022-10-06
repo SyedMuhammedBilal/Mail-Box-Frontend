@@ -1,0 +1,45 @@
+import { makeStyles } from "@material-ui/core";
+
+export default makeStyles({
+  Child3: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "4px 0px 15px",
+    gap: "33px",
+    position: "absolute",
+    width: "688px",
+    height: "1024px",
+    left: "752px",
+    top: "0px",
+    background: "#1F1F1F",
+    borderLeft: "1px solid #3D3D3D",
+  },
+  Frame116: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end",
+    padding: "21px 0px 0px",
+    gap: "14px",
+  },
+  Frame105: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px 0px 0px 3px",
+    gap: "70px",
+  },
+  Frame99: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px",
+    gap: "10px",
+  },
+  Frame50: {},
+  Frame100: {},
+  Frame101: {},
+  Frame102: {},
+});
