@@ -24,6 +24,7 @@ export default makeStyles({
     fontSize: "17.6366px",
     lineHeight: "21px",
     color: "#FFFFFF",
+    cursor: "pointer",
   },
   Child2: {
     display: "flex",
@@ -63,6 +64,7 @@ export default makeStyles({
     fontSize: "17.6366px",
     lineHeight: "21px",
     color: "#006AD4",
+    cursor: "pointer",
   },
   Frame66: {
     display: "flex",
@@ -81,5 +83,6 @@ export default makeStyles({
     fontSize: "17.6366px",
     lineHeight: "21px",
     color: "#006AD4",
+    cursor: "pointer",
   },
 });

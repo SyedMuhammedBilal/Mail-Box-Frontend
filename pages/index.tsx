@@ -1,10 +1,13 @@
+import HeroSection from "@/components/Login-HeroSection/HeroSection";
+import SignupHeroSection from "@/components/Signup-HeroSection/SignupHerosection";
+import { useAppSelector } from "@/store";
 import type { NextPage } from "next";
 import Head from "next/head";
-import HeroSection from "../src/components/Login-HeroSection/HeroSection";
 import Navbar from "../src/components/navbar/Navbar";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  const { pageToggle } = useAppSelector((state) => state.Sign);
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +18,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Navbar />
-        <HeroSection />
+        {pageToggle ? (
+          <SignupHeroSection />
+        ) : (
+          <HeroSection />
+        )}
       </main>
     </div>
   );

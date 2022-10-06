@@ -4,9 +4,19 @@ import Dropdown from "../../assets/Dropdown.svg";
 import Vector from "../../assets/Vector.svg";
 import Image from "next/image";
 import useStyles from "./styles";
+import { useAppDispatch } from "@/store";
+import { setPageToggle } from "@/store/Sign";
 
 const Navbar = () => {
   const classes = useStyles();
+  const dispatch = useAppDispatch();
+
+  const handleOpen = (_: boolean) => {
+    dispatch(
+      setPageToggle(_)
+    )
+  };
+
   return (
     <Box className={classes.MainContainer}>
       <Box className={classes.Child1}>
@@ -27,16 +37,14 @@ const Navbar = () => {
         </Box>
         <Box className={classes.Frame64}>
           <Box>
-            <Typography className={classes.Heading2}>Sign in</Typography>
+            <Typography onClick={() => handleOpen(false)} className={classes.Heading2}>Sign in</Typography>
           </Box>
           <Box>
             <Image src={Vector} />
           </Box>
         </Box>
-        <Box>
-          <Box className={classes.Frame66}>
-            <button className={classes.RegisterButton}>Register</button>
-          </Box>
+        <Box className={classes.Frame66}>
+          <button onClick={() => handleOpen(true)} className={classes.RegisterButton}>Register</button>
         </Box>
       </Box>
     </Box>

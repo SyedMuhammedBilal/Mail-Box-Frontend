@@ -2,21 +2,21 @@ import React from "react";
 import { Box } from "@material-ui/core";
 import People from "../../assets/People.svg";
 import Image from "next/image";
-import useStyles from "./stylesheet";
-import LoginTextField from "../Login-TextField/LoginTextField";
+import useStyles from "../Login-HeroSection/stylesheet";
 import SignHeroSection from "../HeroSection/HeroSection";
+import SignUpTextField from "../Signup-TextField/SignupTextField";
 
-const HeroSection = () => {
+const SignupHeroSection = () => {
   const classes = useStyles();
   return (
     <Box>
       <Box className={classes.Frame91}>
         <Box className={classes.Frame92}>
           <SignHeroSection
-            firstTypo={"Sign In to"}
+            firstTypo={"Sign up to"}
             secondTypo={"Recharge Direct"}
-            firstParaTypo={"If you dont have an account"}
-            secondParaTypo={"Register here!"}
+            firstParaTypo={"If you have an account"}
+            secondParaTypo={"Sign in here!"}
           />
         </Box>
 
@@ -24,11 +24,11 @@ const HeroSection = () => {
           <Image src={People} />
         </Box>
         <Box className={classes.fieldMainContainer}>
-          <LoginTextField />
+          <SignUpTextField />
         </Box>
       </Box>
     </Box>
   );
 };
 
-export default HeroSection;
+export default SignupHeroSection;

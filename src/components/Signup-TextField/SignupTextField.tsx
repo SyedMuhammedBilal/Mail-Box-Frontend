@@ -1,25 +1,25 @@
 import React from "react";
 import { Box, Typography } from "@material-ui/core";
-import useStyles from "./stylesheet";
+import useStyles from "../Login-TextField/stylesheet";
 import Google from "@/assets/google.svg";
 import Facebook from "@/assets/facebook.svg";
 import Apple from "@/assets/apple.svg";
 import Image from "next/image";
-import { SignButton, SignTextField } from "../Reusable-components";
+import { MultiTextfields, SignButton, SignTextField } from "../Reusable-components";
 
-const LoginTextField = () => {
+const SignUpTextField = () => {
   const classes = useStyles();
 
   return (
     <Box className={classes.Frame72}>
+      <Box className={classes.Frame97}>
+        <MultiTextfields placeholder="First Name" />
+        <MultiTextfields placeholder="Last Name" />
+      </Box>
       <SignTextField placeholder="Enter Email" />
       <SignTextField placeholder="Password" />
-      <Box className={classes.forgotPasswordContainer}>
-        <Typography className={classes.forgotPassword}>
-          Recover Password?
-        </Typography>
-      </Box>
-      <SignButton label="Sign in" />
+
+      <SignButton label="Create account" />
 
       <Box className={classes.orContainer}>
         <Box className={classes.line}></Box>
@@ -45,4 +45,4 @@ const LoginTextField = () => {
   );
 };
 
-export default LoginTextField;
+export default SignUpTextField;

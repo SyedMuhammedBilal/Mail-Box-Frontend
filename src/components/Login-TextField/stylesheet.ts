@@ -103,5 +103,12 @@ export default makeStyles({
     border: "1px solid #737373",
     borderRadius: "10px"
   },
-  
+  Frame97: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px",
+    gap: "13px"
+  }
 });
