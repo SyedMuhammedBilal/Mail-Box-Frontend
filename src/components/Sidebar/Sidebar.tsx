@@ -23,7 +23,7 @@ const Sidebar = () => {
                 <Image src={Msg} alt="msg" />
                 Gmail
               </Box>
-              <KeyboardArrowDownIcon />
+              <KeyboardArrowDownIcon style={{ fill: "#fff" }} />
             </Button>
             <Button className={classes.Frame21}>
               <Box className={classes.msgContainer}>

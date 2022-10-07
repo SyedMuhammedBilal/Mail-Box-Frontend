@@ -51,7 +51,7 @@ export const FolderOptions = [
         id: 2,
         title: "Work",
         Icon: WorkIcon,
-        unread: "12",
+        unread: "12", 
     },
     {
         id: 3,

@@ -1,0 +1,1 @@
+export const server_url = "https://mailbox-dev.herokuapp.com/api/"

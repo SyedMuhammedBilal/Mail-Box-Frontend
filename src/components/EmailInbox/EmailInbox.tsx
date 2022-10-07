@@ -2,9 +2,12 @@ import React from "react";
 import { Box, Typography } from "@material-ui/core";
 import useStyles from "../EmailInbox/stylesheet";
 import TextField from "@material-ui/core/TextField";
-import EditIcon from "@material-ui/icons/Edit";
+import PencilIcon from "../../assets/Pencil.svg";
 import { InboxStaticData } from "../../../static/InboxStaticData";
 import Image from "next/image";
+import SearchIcon from "@material-ui/icons/Search";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 const EmailInbox = () => {
   const classes = useStyles();
   return (
@@ -13,7 +16,7 @@ const EmailInbox = () => {
         <Box className={classes.header}>
           <Box className={classes.headerLeft}>
             <Box className={classes.headerLeftTop}>
-            <Typography className={classes.inboxTypo}>Inbox</Typography>
+              <Typography className={classes.inboxTypo}>Inbox</Typography>
             </Box>
             <Box className={classes.messageDetails}>
               <Typography className={classes.messageDetailsTypography}>
@@ -27,18 +30,30 @@ const EmailInbox = () => {
           </Box>
 
           <Box className={classes.searchMessageContainer}>
-            <Box>
-              <TextField />
+            <Box style={{ width: "-webkit-fill-available" }}>
+              <TextField
+                className={classes.textFieldContainer}
+                id="filled-basic"
+                placeholder={"Search"}
+                variant="filled"
+                InputLabelProps={{
+                  style: { color: "#7B7B7B" },
+                }}
+                InputProps={{
+                  startAdornment: <SearchIcon style={{ fill: "#7F7F7F" }} />,
+                  endAdornment: <ExpandMoreIcon style={{ fill: "#7F7F7F" }} />,
+                }}
+              />
             </Box>
-            <Box>
-              <EditIcon />
+            <Box className={classes.editContainer}>
+              <Image src={PencilIcon} alt="pencil-svg" />
             </Box>
           </Box>
         </Box>
 
         <Box className={classes.inboxContainerMain}>
           {InboxStaticData?.map((item) => (
-            <Box className={classes.emailCartContainer}>
+            <Box key={item?.id} className={classes.emailCartContainer}>
               <Box className={classes.emailInfoContainer}>
                 <Box className={classes.userInfoContainer}>
                   <Box className={classes.imgContainer}>
@@ -57,7 +72,11 @@ const EmailInbox = () => {
                 <Box>{item.time} PM</Box>
               </Box>
               <Box className={classes.emailBodyContainer}>
-                <Typography style={{ color: "#7F7F7F" }}>
+                <Typography
+                  style={{
+                    color: "#7F7F7F",
+                  }}
+                >
                   {item.Message}
                 </Typography>
               </Box>

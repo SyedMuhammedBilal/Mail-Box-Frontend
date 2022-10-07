@@ -38,7 +38,7 @@ export const InboxStaticData = [
     time: "4:00",
   },
   {
-    id: 4,
+    id: 5,
     profileImg: ProfImage,
     Name: "Muhammad Haris",
     Subject: "Horse Purchasing",
