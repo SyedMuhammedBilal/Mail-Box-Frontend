@@ -13,11 +13,11 @@ const SignUpTextField = () => {
   return (
     <Box className={classes.Frame72}>
       <Box className={classes.Frame97}>
-        <MultiTextfields placeholder="First Name" />
-        <MultiTextfields placeholder="Last Name" />
+        <MultiTextfields placeholder="First name" />
+        <MultiTextfields placeholder="Last name" />
       </Box>
-      <SignTextField placeholder="Enter Email" />
-      <SignTextField placeholder="Password" />
+      <SignTextField placeholder="Create email" />
+      <SignTextField placeholder="Create password" />
 
       <SignButton label="Create account" />
 

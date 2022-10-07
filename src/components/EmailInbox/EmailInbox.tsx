@@ -9,48 +9,61 @@ const EmailInbox = () => {
   const classes = useStyles();
   return (
     <Box className={classes.MainContainer}>
-      <Box className={classes.header}>
-        <Typography>Inbox</Typography>
-        <Box className={classes.messageDetails}>
-          <Typography className={classes.messageDetailsTypography}>
-            1800 messages,
-          </Typography>
-          <Typography className={classes.messageDetailsTypography}>
-            {" "}
-            2 unread messages
-          </Typography>
-        </Box>
-        <Box className={classes.searchMessageContainer}>
-          <Box>
-            <TextField />
+      <Box className={classes.scrollableDiv}>
+        <Box className={classes.header}>
+          <Box className={classes.headerLeft}>
+            <Box className={classes.headerLeftTop}>
+            <Typography className={classes.inboxTypo}>Inbox</Typography>
+            </Box>
+            <Box className={classes.messageDetails}>
+              <Typography className={classes.messageDetailsTypography}>
+                1800 messages,
+              </Typography>
+              <Typography className={classes.messageDetailsTypography}>
+                {" "}
+                2 unread messages
+              </Typography>
+            </Box>
           </Box>
-          <Box>
-            <EditIcon />
-          </Box>
-        </Box>
-      </Box>
-      <hr color="white" />
-      <Box className={classes.inboxContainerMain}>
-        {InboxStaticData?.map((item) => (
-          <Box className={classes.emailCartContainer}>
-            <Box className={classes.emailInfoContainer}>
-              <Box className={classes.userInfoContainer}>
-                <Box className={classes.imgContainer}>
-                  <Image src={item.profileImg} alt="image no no" />
-                </Box>
 
-                <Box>
-                  <Typography>{item.Name}</Typography>
-                  <Typography>{item.Subject}</Typography>
-                </Box>
-              </Box>
-              <Box>{item.time}</Box>
+          <Box className={classes.searchMessageContainer}>
+            <Box>
+              <TextField />
             </Box>
-            <Box className={classes.emailBodyContainer}>
-              <Typography>{item.Message}</Typography>
+            <Box>
+              <EditIcon />
             </Box>
           </Box>
-        ))}
+        </Box>
+
+        <Box className={classes.inboxContainerMain}>
+          {InboxStaticData?.map((item) => (
+            <Box className={classes.emailCartContainer}>
+              <Box className={classes.emailInfoContainer}>
+                <Box className={classes.userInfoContainer}>
+                  <Box className={classes.imgContainer}>
+                    <Image
+                      style={{ borderRadius: "50%" }}
+                      src={item.profileImg}
+                      alt="image no no"
+                    />
+                  </Box>
+
+                  <Box>
+                    <Typography>{item.Name}</Typography>
+                    <Typography>{item.Subject}</Typography>
+                  </Box>
+                </Box>
+                <Box>{item.time} PM</Box>
+              </Box>
+              <Box className={classes.emailBodyContainer}>
+                <Typography style={{ color: "#7F7F7F" }}>
+                  {item.Message}
+                </Typography>
+              </Box>
+            </Box>
+          ))}
+        </Box>
       </Box>
     </Box>
   );

@@ -4,13 +4,9 @@ import EmailInbox from "@/components/EmailInbox/EmailInbox";
 
 export default function index() {
   return (
-<<<<<<< HEAD
-    <div style={{ color: "white" }}>
-      <EmailInbox />
-=======
-    <div>
+    <div style={{ color: "white", display: "flex", alignItems: "center" }}>
       <Sidebar />
->>>>>>> 3f4696e2c69fa3420b697b9304cd85a4aaead836
+      <EmailInbox />
     </div>
   );
 }
