@@ -1,5 +1,10 @@
+import Sidebar from "@/components/Sidebar/Sidebar";
 import React from "react";
 
 export default function index() {
-  return <div style={{ color: "white" }}>index</div>;
+  return (
+    <div>
+      <Sidebar />
+    </div>
+  );
 }
