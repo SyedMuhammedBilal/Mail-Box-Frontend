@@ -7,6 +7,7 @@ import Apple from "@/assets/apple.svg";
 import Image from "next/image";
 import { SignButton, SignTextField } from "../Reusable-components";
 import { UserService } from "@/services/user-service/user.service";
+import { useRouter } from "next/router";
 
 const LoginTextField = () => {
   const [userCredentials, setUserCredentials] = React.useState({
@@ -15,6 +16,7 @@ const LoginTextField = () => {
   });
   const userService = useMemo(() => new UserService(), []);
   const classes = useStyles();
+  const router = useRouter();
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserCredentials({ ...userCredentials, [e.target.name]: e.target.value });
@@ -25,7 +27,7 @@ const LoginTextField = () => {
     const response = await userService.login(userCredentials);
     console.log(response);
     if (response) {
-      window.location.href = "/emails";
+      router.push("/emails");
       // save the token in the local storage
       localStorage.setItem("token", response.token);
     }

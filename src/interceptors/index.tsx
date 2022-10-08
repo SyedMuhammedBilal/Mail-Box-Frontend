@@ -8,15 +8,19 @@ interface RequestInterceptorProps {
 const RequestInterceptor: React.FC<RequestInterceptorProps> = ({
   children,
 }: RequestInterceptorProps) => {
+  console.log("RequestInterceptor");
+
   axios.interceptors.request.use(
     (config) => {
-      const token = localStorage.getItem("token");
-      if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
-      }
+      console.log("RequestInterceptor config", config);
+      // set the authorization header
+      config.headers.Authorization = `Bearer ${localStorage.getItem(
+        "token"
+      )}`;
       return config;
     },
     (error) => {
+      console.log("RequestInterceptor error", error);
       return Promise.reject(error);
     }
   );

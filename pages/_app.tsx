@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import store from "@/store";
 import RequestInterceptor from "@/interceptors";
 
+
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 

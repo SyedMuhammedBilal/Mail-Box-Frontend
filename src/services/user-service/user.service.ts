@@ -15,12 +15,14 @@ export class UserService {
     }
   };
 
-    public login = async (formData: IAuth) => {
+  public login = async (formData: IAuth) => {
     try {
-      const response = await axios.post(server_url + "auth/login", formData);
-      return response.data;
+      const response = await axios.post(server_url + "auth/login", formData, {
+        withCredentials: true,
+      });
+      return response;
     } catch (error) {
       return error;
     }
-  }
+  };
 }
