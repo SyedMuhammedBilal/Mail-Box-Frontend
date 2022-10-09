@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import TinBox from "../../assets/TinBox.svg";
 import Trash from "../../assets/Trash.svg";
 import Line4 from "../../assets/line4.svg";

@@ -19,12 +19,12 @@ export default makeStyles({
   },
   optionsContainer: {
     display: "flex",
-    width: 'inherit',
+    width: "inherit",
     flexDirection: "column",
     alignItems: "flex-end",
     padding: "21px 0px 15px",
     gap: "14px",
-    borderBottom: '1px solid rgba(248, 250, 252, 0.2)'
+    borderBottom: "1px solid rgba(248, 250, 252, 0.2)",
   },
   optionsWrapper: {
     display: "flex",
@@ -32,8 +32,8 @@ export default makeStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "0px 0px 0px 3px",
-    gap: "170px",
-    width: 'inherit',
+    gap: "100px",
+    width: "inherit",
   },
   optionsBox1: {
     display: "flex",
@@ -86,9 +86,9 @@ export default makeStyles({
   scrollableDiv: {
     overflowY: "scroll",
     height: "1024px !important",
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-    paddingTop: '1rem',
+    paddingLeft: "1rem",
+    paddingRight: "1rem",
+    paddingTop: "1rem",
     position: "relative",
     width: "-webkit-fill-available",
     "&::-webkit-scrollbar": {
@@ -100,9 +100,10 @@ export default makeStyles({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    padding: "12px 18px",
+    padding: "12px 0px",
+    paddingLeft: "2rem",
     gap: "17px",
-    width: 'inherit',
+    width: "inherit",
   },
   userEmailDetailsLeft: {
     display: "flex",
@@ -110,7 +111,7 @@ export default makeStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "0px",
-    gap: "10px"
+    gap: "10px",
   },
   profImage: {
     width: "64px",
@@ -124,7 +125,7 @@ export default makeStyles({
     alignItems: "center",
     padding: "0px",
     gap: "4px",
-    width: 'inherit',
+    width: "inherit",
   },
   userEmailDetailsRightTop: {
     display: "flex",
@@ -132,33 +133,33 @@ export default makeStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "0px",
-    gap: "40rem"
+    gap: "17.125rem",
   },
   userEmailDetailsRightTopTypo1: {
     fontWeight: 510,
     fontSize: "18px",
     lineHeight: "21px",
-    color: "#F8FAFC"
+    color: "#F8FAFC",
   },
-    userEmailDetailsRightTopTypo2: {
-        fontWeight: 400,
-        fontSize: "14px",
-        lineHeight: "17px",
-        color: "#7F7F7F"
-    },
-    userEmailDetailsRightBottom: {
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "0px",
-        gap: "45rem",
-        width: 'inherit',
-    },
-    userEmailDetailsRightBottomTypo: {
-        fontWeight: 400,
-        fontSize: "14px",
-        lineHeight: "17px",
-        color: "#7F7F7F"
-    }
+  userEmailDetailsRightTopTypo2: {
+    fontWeight: 400,
+    fontSize: "14px",
+    lineHeight: "17px",
+    color: "#7F7F7F",
+  },
+  userEmailDetailsRightBottom: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px",
+    gap: "22.188rem",
+    width: "inherit",
+  },
+  userEmailDetailsRightBottomTypo: {
+    fontWeight: 400,
+    fontSize: "14px",
+    lineHeight: "17px",
+    color: "#7F7F7F",
+  },
 });
