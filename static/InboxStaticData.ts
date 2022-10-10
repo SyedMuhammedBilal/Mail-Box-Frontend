@@ -7,7 +7,7 @@ export const InboxStaticData = [
     Name: "Muhammad Haris",
     Subject: "Horse Purchasing",
     Message:
-      "In regards to the previous import of a bulk of pony horses, another container of Arbi horses is going to arrive in a week.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
     time: "4:00",
   },
   {
@@ -16,7 +16,7 @@ export const InboxStaticData = [
     Name: "Muhammad Haris",
     Subject: "Horse Purchasing",
     Message:
-      "In regards to the previous import of a bulk of pony horses, another container of Arbi horses is going to arrive in a week.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
     time: "4:00",
   },
   {
@@ -25,7 +25,7 @@ export const InboxStaticData = [
     Name: "Muhammad Haris",
     Subject: "Horse Purchasing",
     Message:
-      "In regards to the previous import of a bulk of pony horses, another container of Arbi horses is going to arrive in a week.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
     time: "4:00",
   },
   {
@@ -34,7 +34,7 @@ export const InboxStaticData = [
     Name: "Muhammad Haris",
     Subject: "Horse Purchasing",
     Message:
-      "In regards to the previous import of a bulk of pony horses, another container of Arbi horses is going to arrive in a week.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...",
     time: "4:00",
   },
   {
