@@ -11,7 +11,7 @@ export default makeStyles({
     gap: "33px",
     position: "fixed",
     width: "-webkit-fill-available",
-    height: "1024px",
+    height: "100%",
     left: "849px",
     top: "0px",
     background: "#1F1F1F",
