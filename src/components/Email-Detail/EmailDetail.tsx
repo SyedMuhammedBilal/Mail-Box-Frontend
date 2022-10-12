@@ -73,7 +73,16 @@ const EmailDetail = () => {
               <Typography className={classes.userEmailDetailsRightBottomTypo}>
                 to: <span style={{ color: "#fff" }}>Ahsan Chandio</span>
               </Typography>
-              <Image src={WorkIcon} alt="work-icon" />
+              <Box style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "10px",
+                flexDirection: "column",
+                padding: '0px'
+              }}>
+                <Image src={WorkIcon} alt="work-icon" />
+              </Box>
             </Box>
           </Box>
         </Box>

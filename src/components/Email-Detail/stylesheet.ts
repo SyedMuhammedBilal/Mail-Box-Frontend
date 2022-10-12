@@ -29,10 +29,10 @@ export default makeStyles({
   optionsWrapper: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-around",
     alignItems: "center",
     padding: "0px 0px 0px 3px",
-    gap: "100px",
+    gap: "70px",
     width: "inherit",
   },
   optionsBox1: {
@@ -100,9 +100,7 @@ export default makeStyles({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    padding: "12px 0px",
-    // paddingLeft: "2rem",
-    marginLeft: "1.5rem",
+    padding: "17px 30px",
     gap: "17px",
     width: "inherit",
   },
@@ -112,7 +110,6 @@ export default makeStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "0px",
-    gap: "10px",
   },
   profImage: {
     width: "64px",
@@ -124,18 +121,17 @@ export default makeStyles({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    paddingRight: "5rem",
-    gap: "4px",
+    padding: "0px",
     width: "inherit",
+    gap: '2px'
   },
   userEmailDetailsRightTop: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
-    marginRight: "2rem",
     padding: "0px",
-    gap: "17.125rem",
+    width: "inherit",
   },
   userEmailDetailsRightTopTypo1: {
     fontWeight: 510,
@@ -152,11 +148,9 @@ export default makeStyles({
   userEmailDetailsRightBottom: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     padding: "0px",
-    marginRight: "2rem",
-    gap: "22.188rem",
     width: "inherit",
   },
   userEmailDetailsRightBottomTypo: {

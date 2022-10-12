@@ -26,9 +26,8 @@ const LoginTextField = () => {
     e.preventDefault();
     const response = await userService.login(userCredentials);
     console.log(response);
-    if (response) {
+    if (response.status === 200) {
       router.push("/emails");
-      // save the token in the local storage
       localStorage.setItem("token", response.token);
     }
   };

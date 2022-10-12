@@ -12,11 +12,9 @@ const RequestInterceptor: React.FC<RequestInterceptorProps> = ({
 
   axios.interceptors.request.use(
     (config) => {
-      console.log("RequestInterceptor config", config);
-      // set the authorization header
-      config.headers.Authorization = `Bearer ${localStorage.getItem(
-        "token"
-      )}`;
+      const token = localStorage.getItem("token");
+      config.headers.Authorization = `Bearer ${token}`;
+      config.withCredentials = true;
       return config;
     },
     (error) => {
